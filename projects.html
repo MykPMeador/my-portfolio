@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Skills | Mykel Meador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mykel Meador</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="projects.html" class="active">Projects & Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-page">
+        <h1>Technical Skills & Core Stack</h1>
+        <p class="subtitle">A comprehensive breakdown of programming languages, enterprise systems, and analytical tools utilized across a decade of financial technology operations.</p>
+
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming & Scripting</h3>
+                <ul>
+                    <li>JavaScript (Google Apps Script)</li>
+                    <li>HTML5 / CSS3 / jQuery</li>
+                    <li>Java & SQL Fundamentals</li>
+                    <li>Macro & Spreadsheet Automation</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Systems & Core Platforms</h3>
+                <ul>
+                    <li>Finzly BankOS</li>
+                    <li>Salesforce (Custom UI & App Development)</li>
+                    <li>SWIFT RMA Access & Messaging</li>
+                    <li>Microsoft Access & Advanced Excel</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Business Analysis & QA</h3>
+                <ul>
+                    <li>User Acceptance Testing (UAT)</li>
+                    <li>Requirements Gathering & Process Mapping</li>
+                    <li>LucidChart Workflow Diagramming</li>
+                    <li>Quality Assurance & Defect Governance</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 3rem;">Code Sample: Dynamic UI Modal Generator</h2>
+        <p>Example snippet illustrating custom HTML5/CSS3 modal dialog creation and asynchronous backend communication via Google Apps Script.</p>
+        
+        <pre class="code-box"><code>function openNewCase() {
+  var html = HtmlService.createHtmlOutput(
+    '&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;base target="_top"&gt;&lt;style&gt;' +
+    'body { font-family: -apple-system, sans-serif; padding: 16px; font-size: 13px; }' +
+    '.form-group { margin-bottom: 14px; }' +
+    'input, select, textarea { width: 100%; padding: 8px; border: 1px solid #dadce0; border-radius: 4px; }' +
+    '&lt;/style&gt;&lt;/head&gt;&lt;body&gt;' +
+    '&lt;h3&gt;New Ticket Intake&lt;/h3&gt;' +
+    '&lt;p&gt;System modal initialized successfully.&lt;/p&gt;' +
+    '&lt;/body&gt;&lt;/html&gt;'
+  ).setWidth(488).setHeight(300);
+  
+  SpreadsheetApp.getUi().showModalDialog(html, "Create New Case");
+}</code></pre>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mykel Meador. Built for GitHub Pages.</p>
+    </footer>
+</body>
+</html>
