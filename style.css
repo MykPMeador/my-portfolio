@@ -144,3 +144,73 @@ footer {
     margin-top: 4rem;
     font-size: 0.9rem;
 }
+.content-page {
+    max-width: 800px;
+}
+
+.content-page h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.case-study-card, .experience-block {
+    background-color: var(--card-bg);
+    border: 1px solid #334155;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.case-study-card h2, .experience-block h3 {
+    margin-top: 0;
+    color: var(--text-main);
+}
+
+.company {
+    color: var(--accent);
+    font-weight: 500;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.skill-category {
+    background-color: var(--card-bg);
+    border: 1px solid #334155;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.skill-category h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.skill-category ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+    color: var(--text-muted);
+}
+
+.code-box {
+    background-color: #020617;
+    border: 1px solid #334155;
+    padding: 1.5rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #38bdf8;
+}
